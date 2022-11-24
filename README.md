@@ -3,18 +3,27 @@
 > 爬虫模拟实现Facebook的个人主页发帖、小组发帖、添加好友、获取已加入小组列表、获取账户名称。
 > [![License](https://img.shields.io/badge/license-MIT-db5149.svg)](https://github.com/trry071/facebook-crawler-tools/blob/master/LICENSE)
 
-## 使用
+## 运行
+在当前目录下执行以下命令（需Golang环境）：
 
-#### 引入 fb 爬虫工具包
 
+下载依赖包
 ```ssh
-import ("facebook_login/fb")
+go mod tidy
+```
+运行例子
+```ssh
+go run ./
 ```
 
 ## 调用例子
 
-运行前请先配置好国外代理，否则将无法运行。
+只需引入 fb 爬虫工具包
+```ssh
+import ("facebook_login/fb")
+```
 
+代码示例：
 ```go
 package main
 
